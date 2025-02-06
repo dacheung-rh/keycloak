@@ -43,12 +43,12 @@ spec:
             - mountPath: /data
               name: postgres-volume
           env:
-            - name: POSTGRE_USER
+            - name: POSTGRES_USER
               valueFrom:
                 secretKeyRef:
                   name: keycloak-db-secret
                   key: username
-            - name: POSTGRE_PASSWORD
+            - name: POSTGRES_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: keycloak-db-secret
