@@ -53,9 +53,7 @@ spec:
               protocol: TCP
       volumes:
         - name: postgres-volume
-          persistentVolumeClaim:
-            claimName: postgres-pvc
-            emptyDir:
+          emptyDir:
             sizeLimit: 500Mi
 ---
 apiVersion: v1
