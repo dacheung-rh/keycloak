@@ -51,9 +51,9 @@ spec:
             failureThreshold: 3
           env:
             - name: KC_HOSTNAME
-              value: keycloak.apps.cluster-6llmr.6llmr.sandbox2372.opentlc.com
+              value: keycloak.apps.example.com
             - name: KC_HOSTNAME_ADMIN
-              value: admin-rhbk.apps.cluster-6llmr.6llmr.sandbox2372.opentlc.com
+              value: admin-rhbk.apps.example.com
             - name: KC_HOSTNAME_STRICT
               value: 'true'
             - name: KC_HTTP_PORT
