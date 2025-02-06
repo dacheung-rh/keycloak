@@ -38,17 +38,17 @@ spec:
     spec:
       containers:
         - name: postgresql-db
-          image: registry.redhat.io/rhel9/postgresql-16:latest
+          image: docker.io/library/postgres:15
           volumeMounts:
             - mountPath: /data
               name: postgres-volume
           env:
-            - name: POSTGRESQL_USER
+            - name: POSTGRE_USER
               valueFrom:
                 secretKeyRef:
                   name: keycloak-db-secret
                   key: username
-            - name: POSTGRESQL_PASSWORD
+            - name: POSTGRE_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: keycloak-db-secret
